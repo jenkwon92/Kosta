@@ -1,0 +1,10 @@
+package step4;
+
+public class OperatorExam {
+	public void test1() {
+		System.out.println("test1 메서드");
+	}
+	public void test2() {
+		System.out.println("test2 메서드");
+	}
+}

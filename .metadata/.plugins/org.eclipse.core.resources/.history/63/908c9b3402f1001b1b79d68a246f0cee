@@ -1,0 +1,12 @@
+package step5;
+
+public class TestSetterGetter2 {
+	public static void main(String[] args) {
+		Person p = new Person();
+		
+		//setter getter를 tool로 만들어 보고 
+		//활용을 해본다
+		
+		
+	}
+}

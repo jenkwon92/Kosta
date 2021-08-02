@@ -1,0 +1,12 @@
+package step5;
+
+public class TestIf {
+	public static void main(String[] args) {
+		int age = 16;
+		if(age>19) {
+			System.out.println(age+"세 성인입니다.");
+		}else {
+			System.out.println(age+"세 미성년입니다.");
+		}
+	}
+}

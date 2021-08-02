@@ -1,0 +1,12 @@
+package step4;
+
+public class TestOperator {
+	public static void main(String[] args) {
+		int i = 7;
+		int j = 3;
+		 System.out.println(i*j);
+		 System.out.println(i/j);
+		 System.out.println(i%j); //나머지
+		 System.out.println(i=j);//할당 또는 대입
+	}
+}

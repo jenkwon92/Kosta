@@ -1,0 +1,6 @@
+package step2; 
+
+public class Person {
+	//변수 정의 
+	String name ="아이유";
+}

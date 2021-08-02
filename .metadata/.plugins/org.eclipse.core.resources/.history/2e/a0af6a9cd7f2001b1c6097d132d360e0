@@ -1,0 +1,13 @@
+package chapter6;
+
+public class CarTest {
+	public static void main(String[] args) {
+		Car cl = new Car();
+		
+		cl.color = "white";
+		cl.gearType = "auto";
+		cl.door = 4;
+		
+		
+	}
+}

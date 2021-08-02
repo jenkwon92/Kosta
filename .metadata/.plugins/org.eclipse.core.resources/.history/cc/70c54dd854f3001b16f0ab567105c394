@@ -1,0 +1,11 @@
+package step3;
+
+public class TestReferenceDataType {
+	public static void main(String[] args) {
+		//아래는 생성자 매개변수 parameter 리스트에 알맞는
+		//인자 argument를 전달하지 않았으므로 error
+		//Person p = new Person();
+		Person p; //선언	Person 참조형 타입. p는 참조변수
+		p = new Person("아이유",100); //생성
+	}
+}

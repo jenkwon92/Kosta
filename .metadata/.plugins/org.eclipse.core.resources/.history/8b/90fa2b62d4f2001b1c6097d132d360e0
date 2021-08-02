@@ -1,0 +1,7 @@
+package chapter7;
+
+public class StaticImportEx1 {
+	public static void main(String[] args) {
+		System.out.println(Math.random());
+	}
+}

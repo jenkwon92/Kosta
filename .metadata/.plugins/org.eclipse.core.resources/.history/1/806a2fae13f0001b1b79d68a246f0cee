@@ -1,0 +1,22 @@
+****2일차 주요 목차(내일 할 수업 목차)****
+-Java SE 개발 환경설정
+-Java 기본 소개 
+-Java 기본 프로그램 작성 및 실행
+-객체지향 개념
+-Java 기본 문법 (클래스, 객체, 변수, 메서드, 생성자)
+-----------------------------------------------------------------------------
+-Java SE 개발 환경설정: 1day 프로젝트의 Java SE-환결설정.txt에 정리되어 있음
+	요약하면 jdk설치, ide인 eclipse를 설치 후 각각 설정
+	jdk-> java development kit( 자바 개발 도구) 중 java SE jdk를 설치
+	ide ->통합 개발 환경(Integrated Development Environment, IDE)인 eclipse를 설치 후 설정
+	
+-Java 기본 소개 
+1.객체 지향 언어 (이후 수업 예정) : Object Oriented Concept이 적용된 프로그래밍 언어
+2. 네트워킹을 위해 고안된 언어 : 
+
+
+
+
+
+
+***3일차 주요목차****

@@ -1,0 +1,14 @@
+package step4;
+
+public class KostaMember {
+	private String id;
+	
+	public void setId(String id) {
+		//this는 현재 객체를 가르킨다. this.id는 인스턴스 변수 id , id는 매개변수 id이다.
+		this.id = id;
+	}
+	
+	public String getId() {
+		return id;
+	}
+}

@@ -1,0 +1,11 @@
+package step3;
+/*
+ * step3 패키지 클래스에서
+ * step 3 패키지 클래스의 멤버에 접근해서 
+ * 접근 제어자를 테스트 해보는 예제
+ */
+public class TestAccessModifier2 {
+	public static void main(String[] args) {
+		Account a = new Account;
+	}
+}

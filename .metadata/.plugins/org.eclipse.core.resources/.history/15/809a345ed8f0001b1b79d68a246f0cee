@@ -1,0 +1,31 @@
+**3일차 주요목차**
+- review 
+- Object Oriented Concept 객체지향개념 중 Encapsulation 
+- access modifier 접근 제어자 중 public , default , private 
+- setter/getter method 
+- Constructor 생성자 
+- UML 중 Class Diagram 연습 ( tool : staruml ) 
+- java Data Type ( primitive data type 과 reference data type ) 
+----------------------------------------------------------------------
+-review
+-jdk > jre> jvm
+
+JVM -> java virtual machine : interpreter 통역자 역할과 자동 메모리 관리(Garbage Collector)
+
+SDLC 소프트웨어 개발 수명 주기 ( 개발 단계 )
+요구분석 -> 설계 -> 구현 -> 테스트 ->운영  <프로젝트 마일스톤>
+
+마일스톤(milestone) : 사전적 의미는 이정표,  프로젝트를 완수하기 위한 주요 진행 단계
+
+소프트웨어 개발 방법론
+폭포수 모델 waterfall, 애자일 Agile
+
+TDD: Test Driven Development 테스트 주도 개발
+
+객체지향/Object-Oriented / OOAD(Object Oriented Analysis & Design)
+
+Object 객체의 Class 틀래스 : 붕어빵과 붕어빵틀, 건물과 설계도
+
+Object의 구성요소 : 속성( attriburt, variable) 과 기능 (operation, method)
+
+UML ->통합 모델링 언어 Unified Modeling Language
