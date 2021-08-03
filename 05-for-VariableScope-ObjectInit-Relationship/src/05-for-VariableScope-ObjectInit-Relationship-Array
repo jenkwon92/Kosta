@@ -43,5 +43,26 @@
  
  	UML(Unified Modeling Language : 통합 모델링 언어) 중 Class Diagram 으로 위의 관계를 표현해본다
  	 
+ *******6일차 수업목차***
+ - Object ( or Class) Relationship(association, aggregation, composition)
+ - Array(배열) 
+ 	1. primitive data type 을 저장하는 배열
+ 	2. reference data type을 저장하는 배열
+ 	-Overloading
+ 	
+ 	-Inheritance
+ 		is a relationship
+ 		extends
+ 		super
+ 		overriding
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	 
+ 
  
  
