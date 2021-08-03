@@ -1,8 +1,8 @@
 **5일차 수업목차**
  - 반복문 for
  - Variable Scope 변수 범위 : instance variable , local variable  
- - Object 객체 초기화 단계
  - Java Memory 
+ - Object 객체 초기화 단계
  - Object ( or Class) Relationship : use a , has a , consist of  relationship   
  
  --------------------------------------------------------------------------------------
@@ -24,14 +24,24 @@
 	Stack영역 : local variable이 저장되는 영역 , LIFO (Last in First Out)
 	Heap영역 : instance variable이 저장되는 영역. 객체의 정보가 저장될 때, 주소값을 만들어 참조하게 함
 	Class Area(or Meta Space) : 이후 공부예정. static variable 이 저장되는 영역
+			
+			
 								
  - Object 객체 초기화 단계
  	1) 인스턴스 변수의 기본 초기화(ex. 정수형 0, 실수형 0.0 , 논리형 false, 참조형 null)
  	2) 인스턴스 변수의 명시적 초기화(ex - private int day=1;)
  	3) 생성자에 의한 초기화
- 	4) 참조변수에 의한 초기화
+ 	4) 참조변수에 객체의 주소값 할당
+ 	
+ 	
+ - Object ( or Class) Relationship : use a , has a , consist of  relationship 
+ 	: association > aggregation > composition
+ 	
+ 	association(연관) -> use a 관계		예> 사람이 렌트카를 이용한다.
+ 	aggregation(집합 or 집단화) -> has a 관계		예> 사람이 스마트 폰을 가지고 있다. 
+ 	composition (구성) ->  consist of 관계 		예> 자동차가 엔진을 가지고 있다. 사람이 뇌를 가지고 있다 
  
- 
- 
+ 	UML(Unified Modeling Language : 통합 모델링 언어) 중 Class Diagram 으로 위의 관계를 표현해본다
+ 	 
  
  
