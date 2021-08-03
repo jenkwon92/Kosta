@@ -111,7 +111,7 @@ method -> 객체의 기능을 정의
    		private String name;
    		//5. constructor : 객체의 초기화 작업을 담당 
    		public School(){}
-   		//6. method : 객체의 기능을 정의 
+   		//6. method :	 객체의 기능을 정의 
    		public void getStudentList(){}
    
    }
