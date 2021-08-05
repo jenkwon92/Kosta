@@ -10,7 +10,9 @@ public class TestArray3 {
 		
 		for(int i=0; i<price.length;i++) {
 			if(price[i]>money) {
+				
 				System.out.println(price[i]);
+					
 			}
 		}
 	}
