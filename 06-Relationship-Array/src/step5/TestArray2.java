@@ -10,6 +10,8 @@ public class TestArray2 {
 		salary[3] = 600;
 		int totalSalary = 0;
 		
+	
+		
 		//for loop를 이용해 총합을 구한다 
 		for(int i=0; i<salary.length;i++) {
 			totalSalary +=salary[i];
