@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="step1.review.Person"/>
+    <fullyQualifiedTypeName name="step5.access.Bank"/>
+    <fullyQualifiedTypeName name="step5.test.KostaBank"/>
 </qualifiedTypeNameHistroy>
