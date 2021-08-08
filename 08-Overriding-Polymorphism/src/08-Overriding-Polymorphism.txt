@@ -32,4 +32,56 @@
   			    
   			    자식 객체를 생성하면 자식 객체의 생성자 첫라인에 배치되는 super() 에 의해 
   			    부모 -> 자식 순으로 객체가 생성된다
+  			    
+  	single inheritance 	    
+  		자바는 단일 상속을 채택
+  		자바 인터페이스로 다중 상속의 장점을 가진다
+  		-> 이후 공부 예정 : 자바 인터페이스를 이용하면 다중 상속의 장저인
+  								다양한 계층 구조 형성을 통한 다형성(Polymorphism)을 적용할 수 있다
+  								
+  	-Overriding
+  		메서드 오버라이딩 : 부모 메서드를 자신에 맞게 재정의
+  								상속받은 부모 클래스의 메서드를 자식 객체에 알맞게 구현부를 업데이트해서 사용하게 하는 것
+  								
+  		오버라이딩 문법 : 접근제어자는 하위(자식) 클래스의 메서드에서 더 좁아지면 안된다
+  								리턴타입, 메서드명, 매개변수리스트는 동일해야 한다
+  								이후 공부예정 > 상위(부모) 메서드에서 선언한 Exception 또는 그 하위 Exception 만 throws 가능하다
+  	
+  	-java.lang.Object
+  		모든 자바 클래스의 최상위 부모 클래스, 모든 자바 객체는 부모로써 Object 를 가지게 된다.
+  		Class Object is the root of the class hierarchy. Every class has Object as a superclass
+  	
+  		java.lang.Object에 있는 모든 기능을 자바 클래스(or java Object) 는 상속받게 된다.
+  		필요시 Object 에 있는 메서드를 오버라이딩해서 사용하기도 한다.
+  		
+  	-Polymorphism(다형성)
+  		객체지향 주요개념 : Encapsulation, Inheritance, Polymorphism
+  		
+  		하나의 메세지 방식으로 다양한 객체들이 각자의 방식으로 동작하게 하는 성질
+  		객체가 다양한 타입의 변수로 참조되는 성질
+  		One Interface, Multiple Implements
+  		하나의 객체가 다양항 타입의 변수로 참조되는 성질
+  		
+  		다형성(polymorphism) 적용을 위해서는 계층구조 (hierarchy) 형성이 필요하다
+
+		자식 객체는 부모 타입의 변수로 참조 될 수 있다
+		ex> Animal a = new Person(); //가능
+			   Object o = new Person(); //가능
+  	
+  	
+  	
+  	
+  	
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
+  			    
     
