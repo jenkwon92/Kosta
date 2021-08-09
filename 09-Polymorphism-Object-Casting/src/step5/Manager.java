@@ -10,7 +10,6 @@ public class Manager extends Employee{
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return super.toString()+" department:"+department;
 	}
 	
