@@ -22,16 +22,18 @@ public class TestPolymorphismEx {
 		 */
 		// 개발순서 : Employee , Manager, Engineer , CompanyService
 		System.out.println("********add 완료***********");
-/*
+
 		String empNo = "23";
 		Employee emp = service.findEmployeeByEmpNo(empNo);
 		System.out.println(emp); // empNo:23 name:박보검 salary:700 skill:java
 		empNo = "35";
 		Employee emp2 = service.findEmployeeByEmpNo(empNo);
 		System.out.println(emp2); // empNo:35 name:강하늘 salary:300 empNo="99"; Employee
+		/*
 		emp3 = service.findEmployeeByEmpNo(empNo);
 		System.out.println(emp3); // null
+		*/
 		System.out.println("********find 완료***********");
-*/
+
 	}
 }
