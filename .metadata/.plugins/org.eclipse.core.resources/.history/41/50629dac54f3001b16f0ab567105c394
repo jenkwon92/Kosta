@@ -1,7 +1,0 @@
-package step3;
-
-public class TestReferenceDataType {
-	public static void main(String[] args) {
-		Person p = new Person();
-	}
-}
