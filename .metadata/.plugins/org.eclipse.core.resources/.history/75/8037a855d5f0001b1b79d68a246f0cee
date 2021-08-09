@@ -1,5 +1,0 @@
-package step1; //패키지 : 클래스들을 디렉토리별로 분류하여 관리
-
-public class Market {
-
-}

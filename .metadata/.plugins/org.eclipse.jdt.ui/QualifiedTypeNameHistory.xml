@@ -8,4 +8,7 @@
     <fullyQualifiedTypeName name="step1.review.Person"/>
     <fullyQualifiedTypeName name="step5.access.Bank"/>
     <fullyQualifiedTypeName name="step5.test.KostaBank"/>
+    <fullyQualifiedTypeName name="step2.TestSuper4"/>
+    <fullyQualifiedTypeName name="step4.solution.Employee"/>
+    <fullyQualifiedTypeName name="step9.KostaMarket"/>
 </qualifiedTypeNameHistroy>

@@ -1,7 +1,0 @@
-package step4;
-
-public class TestSetterGetter {
-	public static void main(String[] args) {
-		KostaMember m = new KostaMember();
-	}
-}

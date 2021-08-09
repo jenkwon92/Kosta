@@ -1,5 +1,0 @@
-package chapter6;
-
-class ConstructorTest {
-	int value;
-}

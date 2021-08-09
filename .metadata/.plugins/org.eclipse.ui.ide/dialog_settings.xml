@@ -12,6 +12,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\KOSTA\Desktop\07-Inheritance-Overloading-Overriding-inst"/>
 			<item value="C:\Users\KOSTA\Desktop\06-Relationship-Array-inst"/>
 			<item value="C:\Users\KOSTA\Desktop\05-for-VariableScope-ObjectInit-Relationship-inst"/>
 			<item value="C:\Users\KOSTA\Desktop\04-dataType-if-switch-for-while-inst"/>

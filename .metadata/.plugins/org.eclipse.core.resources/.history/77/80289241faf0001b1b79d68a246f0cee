@@ -1,6 +1,0 @@
-package step4;
-
-public class KostaMember {
-	private String id;
-	
-}
