@@ -28,6 +28,7 @@ public class TestPolymorphismEx {
 		System.out.println(emp); // empNo:23 name:박보검 salary:700 skill:java
 		empNo = "35";
 		Employee emp2 = service.findEmployeeByEmpNo(empNo);
+		
 		System.out.println(emp2); // empNo:35 name:강하늘 salary:300 empNo="99"; Employee
 		/*
 		emp3 = service.findEmployeeByEmpNo(empNo);
