@@ -1,9 +1,0 @@
-package chapter6;
-
-public class Data2 {
-	int value;
-	
-	Data(int x){
-		value = x;
-	}
-}
