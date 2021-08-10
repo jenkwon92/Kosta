@@ -1,8 +1,5 @@
-package step8.solution;
+package step6.solution;
 
-import step5.Employee;
-import step5.Engineer;
-import step5.Manager;
 //연습문제
 public class TestPolymorphismEx {
 	public static void main(String[] args) {
@@ -30,11 +27,25 @@ public class TestPolymorphismEx {
 		Employee emp2 = service.findEmployeeByEmpNo(empNo);
 		
 		System.out.println(emp2); // empNo:35 name:강하늘 salary:300 empNo="99"; 
-		empNo = "40";
+		
 		Employee emp3 = service.findEmployeeByEmpNo(empNo);
 		System.out.println(emp3); // null
 		
 		System.out.println("********find 완료***********");
 
+		empNo = "99";
+		service.deleteEmployeeByEmpNo(empNo);
+		//존재하지 않을 떄는 아래와 같이 메세지가 출력된다
+		// 99 사원번호에 해당하는 사원이 없어 삭제 불가 
+		
+		//존재하면 사원번호에 해당하는 배열 요소를 삭제
+		//삭제 후 뒤에자료 앞으로 끌어오기( 뒤에서 덮어씌우기)
+		empNo="12";
+		service.deleteEmployeeByEmpNo(empNo);
+		service.printAll();
+		/*
+		 	empNo:23 name:박보검 salary:700 skill:java
+		 	empNo:35 name:강하늘 salary:300  
+		 */
 	}
 }

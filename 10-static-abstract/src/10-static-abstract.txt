@@ -61,7 +61,11 @@
 	Template Method Design Pattern : 상위 클래스에서 알고리즘의 구조를 정의해 재사용하게 하는 패턴 
 	상위(부모) 클래스 차원에서 작업공정 or 알고리즘 구조를 정의해 재사용하게 하고 특정 부분은 하위(자식) 클래스에서 구현 또는 재정의해서 사용하도록 하는 패턴
 
-
+***11일차 주요목차***
+- interface
+- java.lang.Collection : 자료구조
+	Set
+	List
 
 
 

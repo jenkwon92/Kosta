@@ -19,8 +19,18 @@ public class CompanyService {
 			System.out.println(array[i]); //println 내부적으로 toString()이 호출되어 출력된다.
 		}
 	}
+	public Employee findEmployeeByEmpNo(String empNo) {
+		Employee employee=null;
+		for(int i=0; i<count; i++) {
+			if(array[i].getEmpNo().equals(empNo)) {
+				employee = array[i];
+				break;
+			}
+		}
+		return employee;
+	}
 	
-	
+	/*
 	public Employee[] findEmployeeByEmpNo(String empNo) {
 		for(int i=0; i<array.length; i++) {
 			if(array[i].getEmpNo().equals(empNo)) {
@@ -29,5 +39,8 @@ public class CompanyService {
 		}
 		return array;
 	}
+	*/
+	
+	
 	
 }
