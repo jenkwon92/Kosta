@@ -6,7 +6,7 @@ public class TestPolymorphismEx {
 		// CompanyService 는 자신의 instance variable을
 		// 10개의 length를 가진 배열로 선언하고 생성자에서 초기화한다
 		
-		CompanyService service = new CompanyService(10);
+		CompanyService service = new CompanyService(3);
 		service.add(new Manager("12", "아이유", 500, "연구개발"));
 		service.add(new Engineer("23", "박보검", 700, "java"));
 		service.add(new Employee("35", "강하늘", 300));
@@ -49,9 +49,10 @@ public class TestPolymorphismEx {
 		
 		//존재하면 사원번호에 해당하는 배열 요소를 삭제
 		//삭제 후 뒤에자료 앞으로 끌어오기( 뒤에서 덮어씌우기)
-		empNo="12";
+		empNo="35";
 		service.deleteEmployeeByEmpNo(empNo);
 		service.printAll();
+		System.out.println("*****deleteEmp 완료*****");
 		
 		/*
 		 	empNo:23 name:박보검 salary:700 skill:java
