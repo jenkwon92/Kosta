@@ -66,6 +66,61 @@
 - java.lang.Collection : 자료구조
 	Set
 	List
+	
+	
+복습 --------------
+Object Orientated
+1. Encapsulation(캡슐화)  
+	> interface,impelementation 인터페이스는 공개하고 구현부는 은닉한다
+2. Inheritance (상속) 
+	> generalization (일반화) : 부모 멤버를 물려받아 자식이 재활용합니다.
+	> 계층구조(hierarchy) 형성을 통한 다형성 적용 환경을 제공한다
+3. Polymorphism (다형성)
+	> 다양한 객체를 참조할 수 있는 성질 
+	> 부모타입의 변수로 다양한 객체를 참조할 수있는 성질
+	> 하나의 소통방식으로 다양한 객체를 각자의 방식으로 동작하게 한다
+	
+	* 인터뷰를 하다가 말문이 막히면 사례를 들어 설명하면 된다
+	
+	Hello.java
+					|   -> javac		class loading : metadata저장 : data를 설명하기 위한 data , 이때 함께 메모리에 static 적재 (static : 널리 공유해 사용할 때 사용)
+					v								|
+	Hello.class    								v
+					java	Hello					코드검증
+													|	
+													v
+													실행 main
+													|
+													필요시 동적으로 객체 생성(dynamic)
+
+	java memory 
+	meta space : static :기초 정보를 저장 (class metadata) -프로그램 시작시 공간이 한번만 잡힘 < 설정정보, 여러객체들이 공유해서 볼 것만>
+	stack : local variable(지역변수) : Last In First Out (LIFO)
+	heap : 객체의 정보 - 사이즈를 만들고, 유일한 주소값을 생성해 객체를 저장하고 반환
+
+abstract : abstract class, abstract method
+	abstract class : 부모의 역할에 직접
+							자기 스스로 new로 생성 불가능하지만 부모로서 역할 가능( 멤버 물려줌, 다형성 지원)
+	abstract method : 자식 클래스에게 구현을 강조한다 
+								자신도 abstract로 만들어진다.
+
+
+software design pattern : 어떠한 시스템을 만드는 시점에서 이런식으로 설계를 하면 유용하구나
+									문제해결을 위한 설계의 방식입니다.
+									
+								1) Template Method design Pattern : 상위클래스에서 알고리즘의 구조를 정의해서 하위 클래스에게 물려주고 재사용하게 하는 것
+																					문제해결에 틀이되는 작업 전반을 물려주고 부분적으로 재정의
+																					ex> 피자에서 토핑만 재정의 나머지는 물려준다 
+																			
+								
+
+
+
+
+
+
+
+
 
 
 
