@@ -19,7 +19,6 @@ public class TestList2 {
 		//FriendDTO dto = (FriendDTO)list.get(1);
 		//System.out.println(dto.getName());
 		
-		
 		// 더 줄이면 
 		System.out.println(((FriendDTO)list.get(1)).getMoney());
 		

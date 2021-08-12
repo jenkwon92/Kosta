@@ -12,7 +12,6 @@ public class TestList3 {
 		//list 요소 중 index가 1인 요소의 name을 출력
 		//Generic 이 적용되었으므로 별도의 casting은 필요없다
 		System.out.println(list.get(1).getName());
-
 		
 		//for문을 이용해 요소의 getMoney()를 호출해 money를 출력
 		//별도의 캐스팅 작업은 필요없다

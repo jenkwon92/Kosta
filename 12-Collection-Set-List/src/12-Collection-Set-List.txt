@@ -32,6 +32,7 @@
 	Generic : 타입을 미리 지정해서 데이터 안정성을 보장 ex> LinkedHashSet<String> set = new LinkedHashSet<String>()
 					객체 캐스팅 절차를 감소시킬 수 있다.             ArrayList<FriendDTO> list = new ArrayList<FriendDTO>();
 					
+					
 	1) java.util.Set : 중복 허용 x, 즉, 동일한 데이터를 중복해서 저장하지 않는다
 		LinkedHashSet class -> 중복 인정 x, 추가 순서를 보장
 		TreeSet -> 중복 인정 x, 순서 정렬기능
