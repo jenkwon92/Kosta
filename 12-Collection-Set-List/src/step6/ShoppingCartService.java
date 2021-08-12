@@ -15,4 +15,12 @@ public class ShoppingCartService {
 		
 	}
 
+	public int getCartTotalPrice() {
+		int totalPrice =0;
+		for(int i=0;i<list.size();i++) {
+			totalPrice += list.get(i).getPrice();
+		}
+		return totalPrice;
+	}
+
 }
