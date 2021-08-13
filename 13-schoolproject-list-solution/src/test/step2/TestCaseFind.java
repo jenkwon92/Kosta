@@ -1,11 +1,11 @@
-package test.step3;
+package test.step2;
 
 import model.Employee;
 import model.SchoolService;
 import model.Student;
 import model.Teacher;
 
-public class TestCaseDelete {
+public class TestCaseFind {
 	public static void main(String[] args) {
 		SchoolService service = new SchoolService();
 		service.addMember(new Student("0101231234", "곽승진", "용인", "17"));
@@ -17,13 +17,9 @@ public class TestCaseDelete {
 		service.printAll();//6명의 정보가 출력 
 		System.out.println("***학교 구성원 등록 완료***");
 		String tel="0101231230";//존재하지 않는 번호로 테스트 
-		System.out.println(service.deleteMemberByTel(tel));//01012341234 tel에 해당하는 구성원 정보가 없어서 삭제 불가
+		System.out.println(service.findMemberByTel(tel));//null
 		tel="0101231237";//존재하는 번호로 테스트 
-		System.out.println("삭제대상");
-		System.out.println(service.deleteMemberByTel(tel));// tel:0101231237 name:김근원 address:화성 department:재무부
-		System.out.println("삭제끝");
-		service.printAll();//5명의 정보가 출력 
-		System.out.println("***학교 구성원 삭제 테스트 완료***");
+		System.out.println(service.findMemberByTel(tel));// tel:0101231237 name:김근원 address:화성 department:재무부
 	}
 }
 

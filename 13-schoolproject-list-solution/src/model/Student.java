@@ -15,9 +15,16 @@ public class Student extends Member{
 	public void setStuNo(String stuNo) {
 		this.stuNo = stuNo;
 	}
-	
+
 	@Override
 	public String toString() {
-		return super.toString()+" stuNo : " + stuNo;
+		return super.toString()+", stuNo="+stuNo;
 	}
+	
+	
+	
+	
+	
+	
+	
 }

@@ -18,6 +18,6 @@ public class Employee extends Member{
 	
 	@Override
 	public String toString() {
-		return super.toString()+"department : " + department;
+		return super.toString()+", department="+department;
 	}
 }

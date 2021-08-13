@@ -18,6 +18,6 @@ public class Teacher extends Member{
 	
 	@Override
 	public String toString() {
-		return super.toString()+"subject : " + subject;
+		return super.toString()+ " subject="+subject;
 	}
 }

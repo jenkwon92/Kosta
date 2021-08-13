@@ -1,11 +1,11 @@
-package test.step3;
+package test.step1;
 
 import model.Employee;
 import model.SchoolService;
 import model.Student;
 import model.Teacher;
 
-public class TestCaseDelete {
+public class TestCaseAdd {
 	public static void main(String[] args) {
 		SchoolService service = new SchoolService();
 		service.addMember(new Student("0101231234", "곽승진", "용인", "17"));
@@ -14,18 +14,12 @@ public class TestCaseDelete {
 		service.addMember(new Employee("0101231237", "김근원", "화성", "재무부"));
 		service.addMember(new Student("0101231238", "김민주", "용인", "18"));
 		service.addMember(new Teacher("0101231239", "김병준", "용인", "수학"));
-		service.printAll();//6명의 정보가 출력 
+		service.printAll();// 6명의 정보가 출력
+		// 아래는 중복 테스트
+		// 0101231234 tel 이 중복되어 추가될 수 없습니다
+		
+		service.addMember(new Student("0101231234", "아이유", "잠실", "18"));
 		System.out.println("***학교 구성원 등록 완료***");
-		String tel="0101231230";//존재하지 않는 번호로 테스트 
-		System.out.println(service.deleteMemberByTel(tel));//01012341234 tel에 해당하는 구성원 정보가 없어서 삭제 불가
-		tel="0101231237";//존재하는 번호로 테스트 
-		System.out.println("삭제대상");
-		System.out.println(service.deleteMemberByTel(tel));// tel:0101231237 name:김근원 address:화성 department:재무부
-		System.out.println("삭제끝");
-		service.printAll();//5명의 정보가 출력 
-		System.out.println("***학교 구성원 삭제 테스트 완료***");
+		service.printAll();// 6명 출력
 	}
 }
-
-
-
