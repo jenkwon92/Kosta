@@ -1,0 +1,49 @@
+****14일차 주요목차****
+
+-java.util.Map
+-java.util.Stack, java.util.Queue
+-----------------------------------------------
+java Collection 계열의 주요 요소
+Set : 중복 인정 x
+		TreeSet -> 중복인정x, 정렬 기능
+		LinkedHashSet -> 중복인정 x, 입력순서를 기억
+		
+List : index로 관리
+		ArrayList : index로 관리 , 검색에 유리
+		LinkedList : index로 관리, 추가 , 삭제에 유리
+Map : key와 value 쌍으로 저장하고 key로 제어
+		 key는 유일값, 만약 동일한 key 로 저장될 셩우, values가 업데이트가 된다
+		 LinkedHashMap ->key value 쌍으로 저장, key로 제어, 입력 순서를 기억
+		 
+Stack : LIFO (Last In, First Out ) --> 나중에 입력된 요소가 먼저 추출
+
+Queue : FIFO (First In, First Out) --> 먼저 입력된 요소가 먼저 추출
+
+Iterator : Collection 계열의 모든 자료구조체들을 단일한 방식으로 반복, 열거 할 수 있는 방법을 제공하는 인터페이스
+
+-	Exception 기본 개념
+	java.lang.Throwable class의 sub class(자식 클래스) 1.Exception 2.Error(에러)
+
+	Exception Handling (예외 처리)
+	: 프로그램 실행시 예외 상황 발생할 때 대안흐름을 실행하고 프로그램을 정상 수행하는 것이 예외처리(Exception Handling)의 목적이다
+
+	참고 ) JVM은 실행시 Exception
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
