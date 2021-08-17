@@ -1,5 +1,6 @@
 package step6;
 /*
+ * case 1
  * 프로그램 실행 시 Exception 상황 발생되면 
  * JVM은 Exception 객체를 생성해 메서지를 콘솔에 출력하고 프로그램 종료시키는 것을 확인하는 예제
  * 
@@ -12,7 +13,7 @@ public class TestException1 {
 	public static void main(String[] args) {
 		String name = "아이유";
 		//test를 위해 name에 null로 재할당해본다 
-		name  = null;
+		name  = null; 
 		System.out.println(name.length()); //3개의 문자로 구성
 		System.out.println("프로그램 정상 수행");
 	}
