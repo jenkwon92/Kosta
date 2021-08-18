@@ -1,8 +1,5 @@
 package step8;
 
-import step5.Employee;
-import step5.Engineer;
-import step5.Manager;
 //연습문제
 public class TestPolymorphismEx {
 	public static void main(String[] args) {

@@ -32,10 +32,10 @@ public class CompanyService {
 		}
 		return employee;
 	}
-
+	
 	public void deleteEmployeeByEmpNo(String empNo) {
 		Employee arr = null;
-		for (int i = 0; i < count; i++) {
+		for (int i = 0; i < count;i++) {
 			if (empNo.equals(array[i].getEmpNo())) {
 				array[i] = arr;
 				array[i] = array[i + 1];
@@ -47,7 +47,6 @@ public class CompanyService {
 
 		}
 	}
-
 	/*
 	 * public Employee[] findEmployeeByEmpNo(String empNo) { for(int i=0;
 	 * i<array.length; i++) { if(array[i].getEmpNo().equals(empNo)) { return

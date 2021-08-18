@@ -30,7 +30,7 @@ public class Person {
 		System.out.println(lv);
 	}
 	public void eat2(){
-		int count; //지역변수 local variable을 선언만 한다
+		//int count; //지역변수 local variable을 선언만 한다
 		//System.out.println(count); //compile error , local variable은 명시적 초기화를 해야 사용가능
 		int count2 =0; //명시적 초기화
 		System.out.println(count2);

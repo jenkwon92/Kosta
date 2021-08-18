@@ -2,15 +2,21 @@ package step2;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 class MemoService {
 	public void readMemo(String filePath) throws FileNotFoundException {
 		try {
 			FileReader fr = new FileReader(filePath);
 			System.out.println(fr + "의 파일 정보를 읽는 작업수행");
+			try {
+				fr.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} //사용한 후에는 항상 닫아줘야함
 		} finally {
 			System.out.println("finally는 항상 실행");
-			// fr.close(); //사용한 후에는 항상 닫아줘야함
 		}
 	}
 }
