@@ -10,6 +10,6 @@ public class ExceptionEx9 {
 			System.out.println("에러 메시지 : "+e.getMessage());
 			e.printStackTrace();
 		}
-		System.out.println("시스템이 정상 종료되었습니다");
+		System.out.println("프로그램이  정상 종료되었습니다");
 	}
 }
