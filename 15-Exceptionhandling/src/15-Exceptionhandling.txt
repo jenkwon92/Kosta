@@ -18,4 +18,32 @@
 	finally : Exception 발생 여부와 관계없이 항상 실행
 	throw  : Exception을 고의로 발생시킬 때 사용하는 키워드
 	throws : Exception 발생시 호출한 측으로 Exception을 전달하겠다는 의미의 키워드
+
 	
+***16일차 주요목차***
+- review
+- String /StringBuilder / StringBuffer
+- IO (입출력) 중 File IO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

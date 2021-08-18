@@ -1,7 +1,5 @@
 package step6.solution;
 
-import java.util.ArrayList;
-
 public class CompanyService {
 	// 부모 Employee 타입의 배열로 선언해서 Employee 및 자식 객체들(Manager, Engineer) 을 저장하게 된다
 	private Employee[] array;
