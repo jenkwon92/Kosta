@@ -2,7 +2,6 @@ package step5_solution;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -36,10 +35,10 @@ public class FileService {
 	 * 
 	 */
 	public void copyAndPaste() throws IOException  {
-		BufferedReader br = null;
+		BufferedReader br = null; //초기화를 안해주면 finally 예외 가능성이 있음
 		PrintWriter pw = null;
 		try {
-			br = new BufferedReader(new FileReader(copyFilePath));
+			br = new BufferedReader(new FileReader(copyFilePath)); //FileNotFoundException은 IOException의 자식이기떄문에 두개를 throws해줄필요없음
 			pw = new PrintWriter(pasteFilePath);
 			
 			String data = br.readLine();

@@ -1,6 +1,5 @@
 package step5;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class TestCopyAndPasteService {
@@ -13,8 +12,6 @@ public static void main(String[] args) {
 		try {
 			service.copyAndPaste();
 			System.out.println("복붙완료");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

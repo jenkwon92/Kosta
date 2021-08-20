@@ -2,7 +2,6 @@ package step5;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -35,7 +34,12 @@ public class FileService {
 	 * 입력받아 출력을 반복한다
 	 * 
 	 */
-	public void copyAndPaste() throws FileNotFoundException,IOException  {
+	public void copyAndPaste() throws IOException  {
+		/*
+		 * try -finally를 써주지 않으면 
+		 * printWriter에서 FilenotFoundException이 발생됐을때 아래 while이 실행되지않고 Throws IOException을 통해서 바로 예외처리가 되기때문에
+		 * 항상 br, pw를 닫아줘야하므로 finally문을 사용해서 닫아주는 기능수행이 필요하다
+		 */
 		BufferedReader br = new BufferedReader(new FileReader(copyFilePath));
 		PrintWriter pw = new PrintWriter(pasteFilePath);
 		
@@ -47,6 +51,7 @@ public class FileService {
 		if(br != null) {
 			br.close();
 		}
+		
 		if(pw != null) {
 			pw.close();
 		}
