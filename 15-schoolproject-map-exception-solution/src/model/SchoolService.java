@@ -19,6 +19,5 @@ public class SchoolService {
 		Iterator<Member> it = col.iterator();
 		while(it.hasNext())
 			System.out.println(it.next());
-		
 	}
 }
