@@ -1,7 +1,6 @@
 package step1;
 
 import java.io.IOException;
-import java.io.OutputStream;
 
 public class TestOutputReview_1 {
 	public static void main(String[] args) {
