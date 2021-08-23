@@ -48,6 +48,6 @@ public class AccountService {
 			if(ois !=null)
 				ois.close();
 		}
-		return accountVO;
+		return accountVO; //return (AccountVO)ois.readObject(); 사용가능
 	}
 }
