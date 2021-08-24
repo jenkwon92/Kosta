@@ -9,7 +9,6 @@ public class TestConsoleUI {
 		//풀이본 테스트 
 		ConsoleInstUI7 ui=new ConsoleInstUI7();
 		
-			ui.execute();
-		
+		ui.execute();
 	}
 }
