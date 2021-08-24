@@ -6,7 +6,5 @@ public class TestThread7 {
 	public static void main(String[] args) {
 		Thread t = new Thread(new Word());
 		t.start();
-		
-		
 	}
 }
