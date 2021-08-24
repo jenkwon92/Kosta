@@ -1,5 +1,8 @@
 package step04;
-
+/*
+ * 멀티 스레딩 테스트 예제
+ * TestThread4 프로세스 (main thread + 영상 thread + 음향 thread)
+ */
 public class TestThread4 {
 	public static void main(String[] args) {
 		System.out.println("**main Thread 시작**");
@@ -7,7 +10,7 @@ public class TestThread4 {
 		AudioWorker worker2 = new AudioWorker();
 		Thread t1 = new Thread(worker1);
 		Thread t2 = new Thread(worker2);
-		t1.start();
+		t1.start(); //t1 스레드를 실행 가능상태로 보낸다
 		t2.start();
 		System.out.println("**main thread 종료**");
 	}
