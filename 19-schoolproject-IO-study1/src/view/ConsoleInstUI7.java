@@ -18,18 +18,13 @@ public class ConsoleInstUI7 {
 	private SchoolService service = new SchoolService();
 	private Scanner scanner = new Scanner(System.in);
 
-	public void execute() {
-		try {
-			service.loadData();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
+	public void execute() throws FileNotFoundException, IOException, ClassNotFoundException {
+
+		service.loadData();
+
 		System.out.println("*******학사관리프로그램을 시작합니다******");
 
-		exit:  while (true) {
+		exit: while (true) {
 			System.out.println("1. 추가 2. 삭제 3. 검색 4. 전체회원보기 5.종료");
 			String menu = scanner.nextLine();
 			switch (menu) {
@@ -47,22 +42,18 @@ public class ConsoleInstUI7 {
 				service.printAll();
 				break;
 			case "5":
-				try {
-					service.saveData();
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+
+				service.saveData();
+
 				System.out.println("*******학사관리프로그램을 종료합니다******");
 				break exit;
 			default:
 				System.out.println("잘못된 입력값입니다!!");
-				break ;
-			}//switch
-		}//while
-		if(scanner != null)
-		scanner.close();
+				break;
+			}// switch
+		} // while
+		if (scanner != null)
+			scanner.close();
 	}// execute method
 
 	public void addView() {
@@ -102,7 +93,7 @@ public class ConsoleInstUI7 {
 		System.out.println("리스트에 추가 : " + member);
 	}// addView method
 
-	public void deleteView(){
+	public void deleteView() {
 		System.out.println("삭제할 구성원의 전화번호를 입력하세요");
 		String tel = scanner.nextLine();
 		try {
@@ -118,7 +109,7 @@ public class ConsoleInstUI7 {
 		String tel = scanner.nextLine();
 		try {
 			Member member = service.findMemberByTel(tel);
-			System.out.println("조회결과 : "+member);
+			System.out.println("조회결과 : " + member);
 		} catch (MemberNotFoundException e) {
 			e.printStackTrace();
 		}
