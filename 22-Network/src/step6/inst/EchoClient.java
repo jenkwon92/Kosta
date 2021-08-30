@@ -1,4 +1,4 @@
-package step6.ex;
+package step6.inst;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class EchoClient {
 				System.out.print("서버에 보낼 메세지 :");
 				String message = scanner.nextLine(); // 사용자로부터 콘솔에서 메세지를 입력받는다
 				out.println(message);
-				if (message.equalsIgnoreCase("exit")) { //equalsIgnoreCase 는 대소문자 구분없음
+				if (message.equals("exit")) {
 					System.out.println("EchoClient 종료됩니다");
 					break;
 				}
