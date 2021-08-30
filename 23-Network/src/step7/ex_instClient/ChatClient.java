@@ -1,4 +1,4 @@
-package step7.inst;
+package step7.ex_instClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
