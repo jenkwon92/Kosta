@@ -28,7 +28,7 @@ public class ChatServer {
 		try {
 			serverSocket = new ServerSocket(5432);
 			System.out.println("**ChatServer 실행**");
-			while(true) {
+			while(true) { 
 				Socket socket = serverSocket.accept();
 				ServerWorker serverWorker =new ServerWorker(socket);
 				//list에 추가 
@@ -36,7 +36,7 @@ public class ChatServer {
 				Thread serverWorkerThread = new Thread(serverWorker);
 				serverWorkerThread.start();
 			}
-		}finally {
+		}finally { //가장 마지막으로 닫아줘야함 Socket ->serverSocket
 			if(serverSocket!= null)
 				serverSocket.close();
 		}
@@ -65,7 +65,7 @@ public class ChatServer {
 
 		@Override
 		public void run() {
-			try {
+			try { //socket을 사용했으니까 사용한 후에는 닫아줘야한다
 				chatting();
 			} catch (IOException e) {
 				e.printStackTrace();

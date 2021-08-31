@@ -25,7 +25,7 @@ public class ChatClient {
 	 */
 	public void go() throws UnknownHostException, IOException {
 		try {
-			socket = new Socket(IP.INST,5432);
+			socket = new Socket(IP.LOCAL,5432);
 			br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			scanner = new Scanner(System.in);
 			pw = new PrintWriter(socket.getOutputStream(),true); //auto flush : buffer에 있는 데이터를 즉시 출력
@@ -44,6 +44,11 @@ public class ChatClient {
 				if(message.trim().equalsIgnoreCase("exit"))
 					break;		
 			}
+			
+			//socket만 닫아도 연결되어있는것들은 자연스럽게 끊김
+			//pw.close();
+			//scanner.close();
+			//br.close();
 			
 		}finally {
 			if(scanner != null)
@@ -72,7 +77,8 @@ public class ChatClient {
 				if(message == null)
 					break;
 				System.out.println(message);
-			}
+				
+			}//br.close 를 따로 해주지않은이유?
 		}
 	}
 
