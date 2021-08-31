@@ -1,7 +1,7 @@
 # Java SE workspace
  20210728-20210830
 
-## syllabus 
+## Syllabus 
 1. Java 기본 소개   
    환경설정 
 2. 객체지향 (Object Oriented)
